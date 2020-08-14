@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://sparql.databio.com.co/databio/descripcion.rdf">
+    <rdfs:label xml:lang="es">HERBARIO TULV INCIVA</rdfs:label>
+    <ns1:related rdf:resource="https://sparql.databio.com.co/databio/HerbarioTULV.rdf"/>
+    <rdfs:comment xml:lang="es">Es una coleccion biologica que comprenden los especimenes vegetales que se albergan en el Jardin Botanico Juan Maria Cespedes en el municipio de Tulua, Valle del Cauca</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
+
+

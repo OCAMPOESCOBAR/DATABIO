@@ -5,12 +5,13 @@ sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
 
 from rdflib import Namespace, URIRef, Literal, Graph
 from rdflib.namespace import RDF, RDFS
+import os
 
 DWC = Namespace('http://rs.tdwg.org/dwc/terms/')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 
-coleccion = Namespace('https://190.24.5.78/databio/ColeccionBiologica/')
+coleccion = Namespace('http://sparql.databio.com.co/databio/')
 
 g = Graph()
 
@@ -21,5 +22,4 @@ g.add( (URIRef(coleccion['descripcion.rdf']), RDFS.comment, Literal("""Es una co
 
 g.bind("dwc", DWC)
 
-print("--- Grafo ---")
-print( g.serialize(format='xml') )
+rdf = g.serialize(destination='descripcion.rdf', format='xml')
